@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "bow-multishot-server-only",
+  "version": "${version}",
+  "name": "bow-multishot-server-only",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/joemama/bow-multishot-server-only"
+  },
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "server": [
+      {
+        "value": "io.github.joemama.BowMultishot",
+        "adapter": "kotlin"
+      }
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "fabric-language-kotlin": "*"
+  },
+  "mixins": [
+    "bow-multishot.mixins.json"
+  ]
+}
